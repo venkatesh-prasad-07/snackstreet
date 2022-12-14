@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+ 
+  <link rel="stylesheet" href="/checkout.component.css">
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- <link rel='stylesheet' type='text/css' media='screen' href='uhome.css'> -->
+  <!-- nav font -->
+  <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+
+
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    crossorigin="anonymous">
+
+
+  <!-- fafa -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body style="background-image: url('https://wallpaperaccess.com/full/3063067.png');">
+<!-- partial:index.partial.html -->
+<div class="mainscreen">
+    <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg"  class="bgimg " alt="">--> 
+      <div class="card-1">
+        
+        <div class="rightside">
+          <form action="index.html">
+            <h1>CheckOut</h1>
+            <h2>Payment Information</h2>
+            <p>Cardholder Name</p>
+            <input type="text" class="inputbox" name="name" required />
+            <p>Card Number</p>
+            <input class="inputbox" name="card_number" id="card_number" maxlength="16" required />
+
+            <p>Card Type</p>
+            <select class="inputbox" name="card_type" id="card_type" required>
+              <option value="">--Select a Card Type--</option>
+              <option value="Visa">Visa</option>
+              <option value="RuPay">RuPay</option>
+              <option value="MasterCard">MasterCard</option>
+            </select>
+<div class="expcvv">
+
+            <p class="expcvv_text">Expiry month</p>
+            <input type="month" class="inputbox" name="exp_month" required />
+           
+            
+            <p class="expcvv_text2">CVV</p>
+            <input type="password" class="inputbox" name="cvv" id="cvv" required maxlength="3"/>
+        </div>
+            <p></p>
+            <button type="submit" class="button" (click)="checkout()" >CheckOut</button>
+          </form>
+        </div>
+      </div>
+    </div>
+<!-- partial -->
+  
+</body>
+</html>
